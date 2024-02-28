@@ -12,7 +12,7 @@ const PdfView = () => {
     const { filePath } = useParams();
     console.log("PARAMS is : ", filePath)
 
-    const updatedPath = "https://54.224.207.176:8080/files/" + filePath;
+    const updatedPath = "https://54.224.207.176/files/" + filePath;
     console.log("updated path is : ", updatedPath)
 
     const [numPages, setNumPages] = useState(null);

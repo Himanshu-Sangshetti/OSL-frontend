@@ -163,7 +163,7 @@ function ContentForm() {
     filesArray.forEach((file) => formData.append('files', file));
 
     try {
-      const response = await axios.post('https://54.224.207.176:8080/api/assignment/addContent', formData, {
+      const response = await axios.post('https://54.224.207.176/api/assignment/addContent', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
@@ -206,7 +206,7 @@ const handleLinkSubmit = async (e) => {
   };
 
   try {
-    const response = await axios.post('https://54.224.207.176:8080/api/addLinks', formDataLinks);
+    const response = await axios.post('https://54.224.207.176/api/addLinks', formDataLinks);
     
     console.log(response);
 

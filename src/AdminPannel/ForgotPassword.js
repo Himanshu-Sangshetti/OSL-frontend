@@ -14,7 +14,7 @@ const ForgotPassword = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('https://54.224.207.176:8080/api/v1/auth/forgot-password', {
+      const response = await axios.post('https://54.224.207.176/api/v1/auth/forgot-password', {
         email,
       });
 

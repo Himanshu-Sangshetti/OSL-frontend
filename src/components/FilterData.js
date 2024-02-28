@@ -13,4 +13,4 @@ export const filterData = [
   },
   
 ];
-export const apiUrl = "https://54.224.207.176:8080/api/assignment/getAllAssignments";
+export const apiUrl = "https://54.224.207.176/api/assignment/getAllAssignments";

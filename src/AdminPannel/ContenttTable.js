@@ -55,7 +55,7 @@ const ContentTable = (props) => {
       });
 
       if (confirmed.isConfirmed) {
-        await axios.delete(`https://54.224.207.176:8080/api/assignment/deleteAssignment/${id}`);
+        await axios.delete(`https://54.224.207.176/api/assignment/deleteAssignment/${id}`);
         toast.success('Deleted Successfully');
 
         // Update state to trigger re-render

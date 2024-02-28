@@ -53,7 +53,7 @@ const Register = () => {
         return;
       }
       
-      axios.post("https://54.224.207.176:8080/api/v1/auth/register", formData)
+      axios.post("https://54.224.207.176/api/v1/auth/register", formData)
         .then((response) => {
           if (response.data.success) {
             console.log("Registration successful!");
