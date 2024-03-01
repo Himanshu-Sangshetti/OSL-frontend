@@ -8,12 +8,12 @@ const Table = (probs) => {
 
 
   const showPdf = (file) => {
-    window.open(`https://54.224.207.176/files/${file}`, "_blank", "noreferrer");
+    window.open(`https://35.153.209.57/files/${file}`, "_blank", "noreferrer");
   };
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://54.224.207.176/api/assignment/deleteAssignment/${id}`);
+      await axios.delete(`https://35.153.209.57/api/assignment/deleteAssignment/${id}`);
     } catch (error) {
       console.error('Error:', error);
     }

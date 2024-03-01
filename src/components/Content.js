@@ -22,7 +22,7 @@ const Content = () => {
   async function fetchlinkdata(){
     setloading(true);
     try{
-      const newresult = await axios.get('https://54.224.207.176/api/addLinks/getAllLinks');
+      const newresult = await axios.get('https://35.153.209.57/api/addLinks/getAllLinks');
       console.log(newresult.data);
       setlinkdata(newresult.data.data);
     }

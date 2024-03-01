@@ -8,7 +8,7 @@ const EmailVerify = () => {
   const { token } = useParams();
 
   useEffect(() => {
-    axios.get(`https://54.224.207.176/api/v1/auth/verify/${token}`)
+    axios.get(`https://35.153.209.57/api/v1/auth/verify/${token}`)
       .then((response) => {
         if (response.data.success) {
           setVerificationStatus('Email verified successfully. You can now log in.');
