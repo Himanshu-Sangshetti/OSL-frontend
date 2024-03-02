@@ -13,4 +13,4 @@ export const filterData = [
   },
   
 ];
-export const apiUrl = "https://main.d3uq42b3z272il.amplifyapp.com/api/assignment/getAllAssignments";
+export const apiUrl = "http://18.232.176.102:3000/api/assignment/getAllAssignments";

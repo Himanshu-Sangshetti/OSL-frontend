@@ -26,7 +26,7 @@ const Login = () => {
     validationSchema: validationSchema,
     onSubmit: async (values) => {
       try {
-        const response = await axios.post('https://main.d3uq42b3z272il.amplifyapp.com/api/v1/auth/login', {
+        const response = await axios.post('http://18.232.176.102:3000/api/v1/auth/login', {
           email: values.email,
           password: values.password,
         });

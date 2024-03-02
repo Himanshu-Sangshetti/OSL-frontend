@@ -55,7 +55,7 @@ const ContentTable = (props) => {
       });
 
       if (confirmed.isConfirmed) {
-        await axios.delete(`https://main.d3uq42b3z272il.amplifyapp.com/api/assignment/deleteAssignment/${id}`);
+        await axios.delete(`http://18.232.176.102:3000/api/assignment/deleteAssignment/${id}`);
         toast.success('Deleted Successfully');
 
         // Update state to trigger re-render

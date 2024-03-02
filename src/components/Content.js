@@ -22,7 +22,7 @@ const Content = () => {
   async function fetchlinkdata(){
     setloading(true);
     try{
-      const newresult = await axios.get('https://main.d3uq42b3z272il.amplifyapp.com/api/addLinks/getAllLinks');
+      const newresult = await axios.get('http://18.232.176.102:3000/api/addLinks/getAllLinks');
       console.log(newresult.data);
       setlinkdata(newresult.data.data);
     }
