@@ -8,12 +8,12 @@ const Table = (probs) => {
 
 
   const showPdf = (file) => {
-    window.open(`http://18.232.176.102:3000/files/${file}`, "_blank", "noreferrer");
+    window.open(`https://osl-server.chickenkiller.com:3000/files/${file}`, "_blank", "noreferrer");
   };
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://18.232.176.102:3000/api/assignment/deleteAssignment/${id}`);
+      await axios.delete(`https://osl-server.chickenkiller.com:3000/api/assignment/deleteAssignment/${id}`);
     } catch (error) {
       console.error('Error:', error);
     }

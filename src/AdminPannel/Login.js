@@ -26,7 +26,7 @@ const Login = () => {
     validationSchema: validationSchema,
     onSubmit: async (values) => {
       try {
-        const response = await axios.post('http://18.232.176.102:3000/api/v1/auth/login', {
+        const response = await axios.post('https://osl-server.chickenkiller.com:3000/api/v1/auth/login', {
           email: values.email,
           password: values.password,
         });

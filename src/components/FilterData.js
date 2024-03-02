@@ -13,4 +13,4 @@ export const filterData = [
   },
   
 ];
-export const apiUrl = "http://18.232.176.102:3000/api/assignment/getAllAssignments";
+export const apiUrl = "https://osl-server.chickenkiller.com:3000/api/assignment/getAllAssignments";
