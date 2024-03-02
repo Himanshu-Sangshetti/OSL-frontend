@@ -53,7 +53,7 @@ const Register = () => {
         return;
       }
       
-      axios.post("https://main.d3uq42b3z272il.amplifyapp.com//api/v1/auth/register", formData)
+      axios.post("https://main.d3uq42b3z272il.amplifyapp.com/api/v1/auth/register", formData)
         .then((response) => {
           if (response.data.success) {
             console.log("Registration successful!");

@@ -8,7 +8,7 @@ const EmailVerify = () => {
   const { token } = useParams();
 
   useEffect(() => {
-    axios.get(`https://main.d3uq42b3z272il.amplifyapp.com//api/v1/auth/verify/${token}`)
+    axios.get(`https://main.d3uq42b3z272il.amplifyapp.com/api/v1/auth/verify/${token}`)
       .then((response) => {
         if (response.data.success) {
           setVerificationStatus('Email verified successfully. You can now log in.');
