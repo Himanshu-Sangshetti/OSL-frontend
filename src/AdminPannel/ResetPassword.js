@@ -26,7 +26,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await axios.post(`https://35.153.209.57/api/v1/auth/reset-password/${token}`, {
+      const response = await axios.post(`https://main.d3uq42b3z272il.amplifyapp.com//api/v1/auth/reset-password/${token}`, {
         email,
         newPassword,
       });

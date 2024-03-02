@@ -15,7 +15,7 @@ const ApproveUser = () => {
       return;
     }
 
-    axios.get(`https://35.153.209.57/api/v1/auth/approve/${token}`)
+    axios.get(`https://main.d3uq42b3z272il.amplifyapp.com//api/v1/auth/approve/${token}`)
       .then((response) => {
         if (response.data.success) {
           setApprovalStatus('User approved successfully.');
