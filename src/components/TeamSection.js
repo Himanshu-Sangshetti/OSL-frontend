@@ -6,22 +6,22 @@ import "../styles/TeamSection.css"
 
 const teamMentor = [
   { name: 'Rachna Karnavat', role: 'Teacher', image: 'rachna mam-modified.png', linkedin: 'https://www.linkedin.com/in/rachna-c-631a0916/',
-      instagram: '', },
+      git: 'https://github.com/RachnaKarnavat', },
   { name: 'Dr. Shweta Dharmadhikari', role: 'Teacher', image: 'Swwetw_ photo-modified.png', linkedin: 'https://www.linkedin.com/in/shwetacd/',
-      instagram: '', },
+  git: '', },
  
 ];
 const teamMembers = [
   { name: 'Vijay Kumar', role: 'Frontend Developer', image: 'vijay2-modified.png', linkedin: 'https://www.linkedin.com/in/vijay-kumar-437b51230/',
-      instagram: 'https://github.com/vijaykumar2892002', },
+  git: 'https://github.com/vijaykumar2892002', },
   { name: 'Sahil Jagadale', role: 'Backend Developer', image: 'sahil_photo-modified.png', linkedin: 'https://www.linkedin.com/in/sahil-jagadale-b8b447258/',
-      instagram: 'https://github.com/Sahil-Jagadale', },
+  git: 'https://github.com/Sahil-Jagadale', },
   { name: 'Rushikesh Dhaygude', role: 'Backend Developer', image: 'rushi_photo-modified.png', linkedin: 'https://www.linkedin.com/in/rushikesh-dhaygude-a3a0b71a8/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: 'https://github.com/RushikeshDhaygude', },
+  git: 'https://github.com/RushikeshDhaygude', },
   { name: 'Kavita Thete', role: 'Backend Developer', image: 'kavita_photo-modified.png', linkedin: 'https://www.linkedin.com/in/kavitathete',
-      instagram: 'https://github.com/Kavitat17', },
+  git: 'https://github.com/Kavitat17', },
   { name: 'Shankar Pawar', role: 'Backend Developer', image: 'shankar_photo-modified.png' ,linkedin: 'https://www.linkedin.com/in/shankar-pawar-281b01212/',
-      instagram: 'GitHub- https://github.com/spawar955 ', },
+  git: 'GitHub- https://github.com/spawar955 ', },
   
   
   
@@ -42,7 +42,7 @@ const TeamSection = () => {
               role={member.role}
               image={member.image}
               linkedin={member.linkedin}
-              instagram={member.instagram}
+              git={member.git}
             />
           </Col>
         ))}
@@ -60,7 +60,7 @@ const TeamSection = () => {
               role={member.role}
               image={member.image}
               linkedin={member.linkedin}
-              instagram={member.instagram}
+              git={member.git}
             />
           </Col>
         ))}

@@ -1,4 +1,4 @@
-import React from 'react';
+import {React,useEffect} from 'react';
 import './App.css';
 import ApproveUser from './ApproveUser.js';
 import Home from './components/Home';
@@ -23,6 +23,14 @@ import Headerr from './components/Headerr.js';
 import PdfView from './components/PdfView.js';
 import TeamSection from './components/TeamSection';
 const App = () => {
+  useEffect(() => {
+    const clearLocalStorageAfterDelay = setTimeout(() => {
+      localStorage.clear();
+    }, 60 * 60 * 1000); // 1 hour in milliseconds
+  
+    return () => clearTimeout(clearLocalStorageAfterDelay);
+  }, []);
+  
   return (
     <>
       <Headerr />

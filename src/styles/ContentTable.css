@@ -13,7 +13,7 @@ body {
 
 table {
     overflow-x: scroll;
-    
+
     width: 100%;
     border-collapse: collapse;
     box-shadow: 0 0 3px rgba(0, 0, 0, .2);
@@ -115,7 +115,8 @@ tr:hover td {
     background-color: rgb(206, 68, 8);
     height: 100%;
 }
-.pdf-icon{
+
+.pdf-icon {
     margin-right: 5%;
     color: rgb(251, 4, 25);
 }
@@ -124,48 +125,49 @@ tr:hover td {
 
 .video-player-container {
 
-   
-   bottom: 6%;
-    
-    
-     position: absolute;
-   
+
+    bottom: 6%;
+
+
+    position: absolute;
+
     z-index: 9999;
     transition: all 0.3s ease;
-  }
-  
-  .video-player-container.fullscreen {
+}
+
+.video-player-container.fullscreen {
     position: absolute;
-  }
-  
-  .video-player-container .close-button {
+}
+
+.video-player-container .close-button {
     position: absolute;
     top: 7%;
     right: 9%;
-    font-size: 2.9vw; /* Adjust the font size as a percentage of the viewport width */
+    font-size: 2.9vw;
+    /* Adjust the font size as a percentage of the viewport width */
     color: white;
     cursor: pointer;
     z-index: 10000;
-  }
-  .video-div{
+}
+
+.video-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
-  
-  /* Media query for smaller screens */
-  @media (max-width: 768px) {
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
     .video-player-container .close-button {
-      font-size: 3vw;
+        font-size: 3vw;
     }
-  }
-  
-  /* Media query for even smaller screens */
-  @media (max-width: 480px) {
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
     .video-player-container .close-button {
-      font-size: 4vw;
+        font-size: 4vw;
     }
-    
-  }
-  
+
+}

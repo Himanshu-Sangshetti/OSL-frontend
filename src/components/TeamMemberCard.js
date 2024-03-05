@@ -3,7 +3,7 @@ import React from 'react'
 import { Card } from 'react-bootstrap';
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { FaGithub } from "react-icons/fa";
-const TeamMemberCard = ({ name,designation, role, image,linkedin,instagram }) => {
+const TeamMemberCard = ({ name,designation, role, image,linkedin,git }) => {
     return (
       <div className='Cards'>
           <div className="team-member-card">
@@ -15,7 +15,7 @@ const TeamMemberCard = ({ name,designation, role, image,linkedin,instagram }) =>
                 <a href={linkedin} className="social-icon linkedin-icon" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
-                <a href={instagram} className="social-icon instagram-icon" target="_blank" rel="noopener noreferrer">
+                <a href={git} className="social-icon instagram-icon" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
                 </a>
               </div>

@@ -123,7 +123,7 @@
 
 
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import '../styles/Contentform.css';
@@ -138,7 +138,23 @@ function ContentForm() {
  const [link ,setlink]=useState('');
  const [linkType,setlinkType]=useState('');
 
+    const [User, setUser] = useState(null); // State to store user details
+
+    useEffect(() => {
+        // Check if the user is logged in when the component mounts
+        const loggedInUser = JSON.parse(localStorage.getItem('user'));
+        if (!loggedInUser) {
+            // If user is not logged in, redirect to dashboard
+            navigate("/");
+        } else {
+            setUser(loggedInUser);
+        }
+    }, [navigate]);
+
+
  const handleSubmit = async (e) => {
+
+   
   e.preventDefault();
 
   if (!category || !['Assignments', 'Theory Topics', 'Interview questions', 'Books', 'Other Resources'].includes(category)) {

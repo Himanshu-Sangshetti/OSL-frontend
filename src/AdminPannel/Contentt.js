@@ -12,6 +12,20 @@ const Contentt = () => {
   const [featuredata,setfeaturedata]=useState([]);
   const[loading,setloading]=useState(true);
   const [category,setcategory]=useState(filterData[0].title);
+  
+    const [User, setUser] = useState(null); // State to store user details
+
+    useEffect(() => {
+        // Check if the user is logged in when the component mounts
+        const loggedInUser = JSON.parse(localStorage.getItem('user'));
+        if (!loggedInUser) {
+            // If user is not logged in, redirect to dashboard
+            navigate("/");
+        } else {
+            setUser(loggedInUser);
+        }
+    }, [navigate]);
+
   async function fetchdata(){
     setloading(true);
     try{
