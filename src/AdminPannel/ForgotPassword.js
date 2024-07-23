@@ -14,7 +14,7 @@ const ForgotPassword = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('https://OSL-backend.chickenkiller.com:3000/api/v1/auth/forgot-password', {
+      const response = await axios.post('http://OSL-backend.chickenkiller.com:3000/api/v1/auth/forgot-password', {
         email,
       });
 
