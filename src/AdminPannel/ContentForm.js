@@ -179,7 +179,7 @@ function ContentForm() {
     filesArray.forEach((file) => formData.append('files', file));
 
     try {
-      const response = await axios.post('https://OSL-backend.chickenkiller.com:3000/api/assignment/addContent', formData, {
+      const response = await axios.post('https://OSL-backend.chickenkiller.com/api/assignment/addContent', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
@@ -222,7 +222,7 @@ const handleLinkSubmit = async (e) => {
   };
 
   try {
-    const response = await axios.post('https://OSL-backend.chickenkiller.com:3000/api/addLinks', formDataLinks);
+    const response = await axios.post('https://OSL-backend.chickenkiller.com/api/addLinks', formDataLinks);
     
     console.log(response);
 

@@ -55,7 +55,7 @@ const ContentTable = (props) => {
       });
 
       if (confirmed.isConfirmed) {
-        await axios.delete(`https://OSL-backend.chickenkiller.com:3000/api/assignment/deleteAssignment/${id}`);
+        await axios.delete(`https://OSL-backend.chickenkiller.com/api/assignment/deleteAssignment/${id}`);
         toast.success('Deleted Successfully');
 
         // Update state to trigger re-render
