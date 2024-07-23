@@ -53,7 +53,7 @@ const Register = () => {
         return;
       }
       
-      axios.post("https://osl-server.chickenkiller.com:3000/api/v1/auth/register", formData)
+      axios.post("https://OSL-backend.chickenkiller.com:3000/api/v1/auth/register", formData)
         .then((response) => {
           if (response.data.success) {
             console.log("Registration successful!");

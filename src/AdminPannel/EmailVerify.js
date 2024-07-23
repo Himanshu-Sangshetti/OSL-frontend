@@ -8,7 +8,7 @@ const EmailVerify = () => {
   const { token } = useParams();
 
   useEffect(() => {
-    axios.get(`https://osl-server.chickenkiller.com:3000/api/v1/auth/verify/${token}`)
+    axios.get(`https://OSL-backend.chickenkiller.com:3000/api/v1/auth/verify/${token}`)
       .then((response) => {
         if (response.data.success) {
           setVerificationStatus('Email verified successfully. You can now log in.');
