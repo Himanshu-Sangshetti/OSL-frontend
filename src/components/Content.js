@@ -24,7 +24,7 @@ const Content = () => {
   async function fetchlinkdata() {
     setloading(true);
     try {
-      const newresult = await axios.get('http://OSL-backend.chickenkiller.com:3000/api/addLinks/getAllLinks');
+      const newresult = await axios.get('https://OSL-backend.chickenkiller.com:3000/api/addLinks/getAllLinks');
       console.log(newresult.data);
       setlinkdata(newresult.data.data);
     }

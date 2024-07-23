@@ -26,7 +26,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await axios.post(`http://OSL-backend.chickenkiller.com:3000/api/v1/auth/reset-password/${token}`, {
+      const response = await axios.post(`https://OSL-backend.chickenkiller.com:3000/api/v1/auth/reset-password/${token}`, {
         email,
         newPassword,
       });
