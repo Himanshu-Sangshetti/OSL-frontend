@@ -8,12 +8,12 @@ const Table = (probs) => {
 
 
   const showPdf = (file) => {
-    window.open(`https://OSL-backend.chickenkiller.com/files/${file}`, "_blank", "noreferrer");
+    window.open(`https://OSL-backend.chickenkiller.com:3000/files/${file}`, "_blank", "noreferrer");
   };
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://OSL-backend.chickenkiller.com/api/assignment/deleteAssignment/${id}`);
+      await axios.delete(`https://OSL-backend.chickenkiller.com:3000/api/assignment/deleteAssignment/${id}`);
     } catch (error) {
       console.error('Error:', error);
     }

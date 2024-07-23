@@ -15,7 +15,7 @@ const ApproveUser = () => {
       return;
     }
 
-    axios.get(`https://OSL-backend.chickenkiller.com/api/v1/auth/approve/${token}`)
+    axios.get(`https://OSL-backend.chickenkiller.com:3000/api/v1/auth/approve/${token}`)
       .then((response) => {
         if (response.data.success) {
           setApprovalStatus('User approved successfully.');
