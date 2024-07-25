@@ -20,7 +20,7 @@ const teamMembers = [
   git: 'https://github.com/RushikeshDhaygude', },
   { name: 'Kavita Thete', role: 'Backend Developer', image: 'kavita_photo-modified.png', linkedin: 'https://www.linkedin.com/in/kavitathete',
   git: 'https://github.com/Kavitat17', },
-  { name: 'Shankar Pawar', role: 'Backend Developer', image: 'shankar_photo-modified.png' ,linkedin: 'https://www.linkedin.com/in/shankar-pawar-281b01212/',
+  { name: 'Shankar Pawar', role: 'Frontend Developer', image: 'shankar_photo-modified.png' ,linkedin: 'https://www.linkedin.com/in/shankar-pawar-281b01212/',
   git: 'GitHub- https://github.com/spawar955 ', },
   
   

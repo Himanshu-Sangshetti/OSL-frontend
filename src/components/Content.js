@@ -10,6 +10,7 @@ import { FaLink } from "react-icons/fa";
 import TeamSection from './TeamSection';
 import { LuLinkedin } from "react-icons/lu";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+
 const Content = () => {
   const navigate = useNavigate();
   const Team = () => navigate('/TeamSection');
@@ -19,14 +20,18 @@ const Content = () => {
   const [loading, setloading] = useState(true);
   const [category, setcategory] = useState(filterData[0].title);
   const [linkdata, setlinkdata] = useState([]);
+  const [showToast,setShowToast] = useState(false);
+
 
 
   async function fetchlinkdata() {
     setloading(true);
     try {
       const newresult = await axios.get('https://OSL-backend.chickenkiller.com/api/addLinks/getAllLinks');
-      console.log(newresult.data);
+      console.log("Data :",newresult.data);
       setlinkdata(newresult.data.data);
+      
+
     }
     catch (error) {
       toast.error("Something went wrong");
@@ -41,6 +46,9 @@ const Content = () => {
       const result = await axios.get(apiUrl);
       // console.log(result.data);
       setfeaturedata(result.data.data);
+      if(result.data.data){
+        setShowToast(true);
+      }
     }
     catch (error) {
       toast.error("Something went wrong");
@@ -110,7 +118,9 @@ const Content = () => {
                 </div>
                 <div className="table-main">
                   {
-                    loading ? (<Spinner></Spinner>) : (<ContentTable setfeaturedata={setfeaturedata} featuredata={featuredata} category={category}></ContentTable>)
+                    loading ? (<Spinner></Spinner>) : (<ContentTable setfeaturedata={setfeaturedata} featuredata={featuredata} category={category}
+                      showToast={showToast} 
+                    ></ContentTable>)
                   }
                 </div>
                 {/* </div> */}

@@ -13,7 +13,7 @@ const ContentTable = (props) => {
 
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isFullScreen, setIsFullScreen] = useState(false);
-  const { setfeaturedata, featuredata, category } = props;
+  const { setfeaturedata, featuredata, category, showToast } = props;
   const filteredData = featuredata ? featuredata.filter((data) => data.category === category) : [];
 
 
@@ -25,9 +25,11 @@ const ContentTable = (props) => {
   };
 
   const displayToast = () => {
-    setTimeout(() => {
-      toast.error(`${category} is Empty`);
-    }, 5000);
+    if (showToast) {
+     
+        toast.error(`${category} is Empty`);
+      ;
+    }
   };
 
   const showPdf = (file) => {

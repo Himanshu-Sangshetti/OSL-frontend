@@ -2,8 +2,6 @@ import {React,useEffect} from 'react';
 import './App.css';
 import ApproveUser from './ApproveUser.js';
 import Home from './components/Home';
-import Home2 from './components/Home2';
-import Home3 from './components/Home3';
 import "./styles/Content.css";
 import "./styles/Navbar.css";
 import './styles/TeamMemberCard.css';
@@ -36,8 +34,6 @@ const App = () => {
       <Headerr />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home2" element={<Home2 />} />
-        <Route path="/home3" element={<Home3 />} />
         <Route path="/admin" element={<Login />} />
         <Route path='/login' element={<Login />} />
         <Route path='/forgot-password' element={<ForgotPassword />} />

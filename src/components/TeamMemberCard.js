@@ -11,6 +11,7 @@ const TeamMemberCard = ({ name,designation, role, image,linkedin,git }) => {
             <Card.Img className="team-member-image" variant="top" src={image} alt={name} />
             <Card.Body>
               <div className="team-member-title">{name}</div>
+              <div className="team-member-title">{role}</div>
               <div className='logos'>
                 <a href={linkedin} className="social-icon linkedin-icon" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
