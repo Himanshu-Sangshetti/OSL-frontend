@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import * as Yup from "yup";
 import './register.css';
+import logo from "../components/assets/Logo/MAINLOGO.png"
 const Register = () => {
   const navigate = useNavigate();
   
@@ -86,7 +87,7 @@ const Register = () => {
       <div className='login-first-div'>
         <div className='left-side'>
           <div className='left-main'>
-          <img src='MAINLOGO.png' alt='Your Image' />
+          <img src={logo} alt='Your Image' />
           </div>
         </div>
 

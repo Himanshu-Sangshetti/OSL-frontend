@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 import * as Yup from 'yup';
 import './login.css';
 import PasswordToggle from "./PasswordToggle";
+import logo from "../components/assets/Logo/MAINLOGO.png"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -75,7 +76,7 @@ const Login = () => {
 
           <div className='left-side'>
             <div className='left-main'>
-            <img className='MAIN_LOGO' src='MAINLOGO.png' alt='Your Image' />
+            <img className='MAIN_LOGO' src={logo} alt='Your Image' />
             {/* <img src='pict_logo.png' alt='Your Image' /> */}
             </div>
           </div>

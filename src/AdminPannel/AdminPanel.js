@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import UserProfile from "./UserProfile";
+import logo  from "../components/assets/Logo/pict_logo.png"
 import "./adminPanel.css";
 const AdminPanel = () => {
     const navigate = useNavigate(); // hook for navigation
@@ -44,7 +45,7 @@ const AdminPanel = () => {
         <div className="admin-main">
             <h2 className="admin-panel">Admin Panel</h2>
             <div className="section">
-                <div > <img className="profil-img" src={process.env.PUBLIC_URL + '/image/pict_logo.png'} alt="" /></div>
+                <div > <img className="profil-img" src={logo} alt="" /></div>
                 <div><UserProfile user={user} />
                     <div className="button-main">
                         <div >

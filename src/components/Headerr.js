@@ -1,12 +1,12 @@
 import React from 'react'
-
+import logo  from "../components/assets/Logo/pict_logo.png"
 
 const Headerr = () => {
   return (
     <>
     <div className='Main-bar'>
         <div className='College-logo'>
-            <img className='COLLEGE_LOGO ' src='pict_logo.png' alt='COLLEGE-LOGO'></img>
+            <img className='COLLEGE_LOGO ' src={logo} alt='COLLEGE-LOGO'></img>
         </div>
         <div className='Website-title'>
           <div className='Title'>Society for Computer Technology and Research's</div>

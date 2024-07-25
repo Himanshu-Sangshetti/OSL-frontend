@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './forgotPassword.css';
-
+import logo from "../components/assets/Logo/MAINLOGO.png"
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
@@ -46,7 +46,7 @@ const ForgotPassword = () => {
         <div className='login-first-div'>
           <div className='left-side'>
             <div className='left-main'>
-              <img src='MAINLOGO.png' alt='Your Image' />
+              <img src={logo} alt='Your Image' />
             </div>
           </div>
 
