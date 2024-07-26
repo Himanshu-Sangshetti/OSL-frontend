@@ -20,6 +20,7 @@ import ResetPassword from './AdminPannel/ResetPassword';
 import Headerr from './components/Headerr.js';
 import PdfView from './components/PdfView.js';
 import TeamSection from './components/TeamSection';
+import Nopage from './components/Nopage.js';
 const App = () => {
   useEffect(() => {
     const clearLocalStorageAfterDelay = setTimeout(() => {
@@ -47,6 +48,7 @@ const App = () => {
         <Route path='/reset-password/:token' element={<ResetPassword />} />
         <Route path='/approve/:token' element={<ApproveUser />} />
         <Route path='/file/:filePath' element={<PdfView />} />
+        <Route path="*" element={<Nopage />} />
       </Routes>
 
 
